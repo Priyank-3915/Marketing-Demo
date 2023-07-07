@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 .Brand {
   color: white !important;
   font-size: 20px;
@@ -21,6 +24,10 @@
 }
 .dot {
   color: #ffc551;
+}
+.navbar-toggler .fa-bars{
+  color: #fff;
+
 }
 
 .bg-image {
@@ -163,11 +170,13 @@
 .nav-pills {
   margin-top: 45px;
 }
+.nav-pills .nav-link.active{
+  background-color: #ffc451;
+}
 /* page-6 */
 /* page-7 */
 .img-counts {
   width: 102%;
-  height: 108%;
 }
 .num {
   font-size: 30px;
@@ -228,16 +237,38 @@
 }
 .boxxx {
   border: 1px solid #ffc451;
-  border-radius: 5px;
-  font-size: 26px;
-  padding: 10px;
-  background-color: #ffc451;
-  width: 43px;
-  height: 45px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #ffc451;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+.center{
+  align-items: center;
 }
 .line-up {
   display: flex;
   flex-direction: column;
 }
-
 /* page-9 */
+
+/* Media Query */
+@media (max-width: 480px) {
+  .bg-image{
+    height:100%;
+  }
+  .bg-image-5 {
+    height: 300px; 
+  }
+  .team .flex-card{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .row h1 {
+    margin-top: 10px;
+  }
+}
